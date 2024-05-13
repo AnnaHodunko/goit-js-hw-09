@@ -23,3 +23,38 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.ul {
+  list-style: none;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1128px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-link {
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+.gallery-image:hover {
+  transform: scale(1);
+}
