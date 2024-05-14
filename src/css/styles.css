@@ -15,7 +15,7 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(17, 103, 79, 0.87);
+  background-color: rgba(195, 142, 181, 0.87);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -112,12 +112,14 @@ img {
 }
 
 [type='email']:hover,
-[type='email']:hover {
+[name='message']:hover {
   border: 1px solid #000000;
 }
 
+[type='email']:focus,
+[name='message']:focus,
 [type='email']:active,
-[name='message'] {
+[name='message']:active {
   border: 1px solid #808080;
 }
 
