@@ -22,16 +22,15 @@ function handleSubmit(event) {
   }
 }
 function handleInput(event) {
-  formData.email = event.currentTarget.elements.email.value.trim();
-  formData.message = event.currentTarget.elements.message.value.trim();
+  formData.email = email.value.trim();
+  formData.message = message.value.trim();
   localStorage.setItem(formLocalKey, JSON.stringify(formData));
 }
 
 function populateTextarea() {
   const savedMessage = JSON.parse(localStorage.getItem(formLocalKey));
-  if (!savedMessage) {
+  if (savedMessage) {
     email.value = savedMessage.email || '';
     message.value = savedMessage.message || '';
-    return;
   }
 }
